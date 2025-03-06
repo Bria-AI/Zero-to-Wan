@@ -28,8 +28,9 @@ A minimalistic repo to fine tune Wan2.1-1.3B
 
 ## Introduction
 This is a minimalistic, hackable repo to fine tune Wan2.1-1.3B on some simple effects courtesy of [Hugging Face](https://huggingface.co/datasets/finetrainers/3dgs-dissolve).
-The repo includes the implementation of the [Wan Model](https://github.com/Wan-Video/Wan2.1/tree/main) and the training implementation uses plain PyTorch.
-We'd like to also thank the authors of [DiffSynth](https://github.com/modelscope/DiffSynth-Studio/tree/main), [FastVideo](https://github.com/hao-ai-lab/FastVideo/) for their great work which we rely on in this repo.
+The repo includes the implementation of the [Wan Model](https://github.com/Wan-Video/Wan2.1/tree/main) and its finetuning using plain PyTorch.
+
+We'd like to also thank the authors of [DiffSynth](https://github.com/modelscope/DiffSynth-Studio/tree/main), [FastVideo](https://github.com/hao-ai-lab/FastVideo/) for their great work which we build on in this repo.
 
 The stages of training implemented in this repo are:
 1. Data preparation
@@ -48,6 +49,7 @@ cd <>
 ```
 
 2. Install `uv`:
+   
 Instructions taken from [here](https://docs.astral.sh/uv/getting-started/installation/).
 
 For linux systems this should be:
@@ -61,20 +63,25 @@ source $HOME/.local/bin/env
 uv sync --no-install-package flash-attn
 uv sync
 ```
+4. Activate your `.venv` and set the Python env:
+```
+source .venv/bin/activate
+export PYTHONPATH=${PYTHONPATH}:${PWD}
+```
 
-3. Run the data preparation script
+5. Run the data preparation script
 ```
 chmod +x scripts/run_data_prep.sh
 ./scripts/run_data_prep.sh
 ```
 
-4. Run the training script
+6. Run the training script
 ```
 chmod +x scripts/run_train.sh
 ./scripts/run_train.sh
 ```
 
-5. Run the generation script
+7. Run the generation script
 currently the generation script uses checkpoint-1000 as the finetuned checkpoint, you can change it to any other checkpoint you want to use for generation.
 ```
 chmod +x scripts/run_generate.sh
