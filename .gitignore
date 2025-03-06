@@ -1,0 +1,7 @@
+datasets/
+weights/
+outputs/
+*.pyc
+*__pycache__*
+launch.json
+wandb/

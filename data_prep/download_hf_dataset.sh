@@ -1,0 +1,1 @@
+huggingface-cli download finetrainers/3dgs-dissolve --repo-type dataset --local-dir ./datasets/3dgs-dissolve

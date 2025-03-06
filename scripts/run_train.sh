@@ -1,0 +1,15 @@
+torchrun --standalone --nproc_per_node=1 training/train.py \
+--dataset_dir ./datasets/3dgs-dissolve/videos \
+--resolution 480x832 \
+--num_frames 81 \
+--vae_name wan \
+--max_sequence_length 512 \
+--starting_checkpoint_dir "./weights/Wan2.1-T2V-1.3B/" \
+--experiment_name run1_3dgs_dissolve \
+--learning_rate 1e-5 \
+--checkpoint_every 100 \
+--log_every 1 \
+--train_batch_size 1 \
+--gradient_checkpointing True \
+--num_warmup_steps 10 \
+--output_dir ./outputs/run1_3dgs_dissolve/

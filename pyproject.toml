@@ -1,0 +1,32 @@
+[project]
+name = "private-wan-min-train"
+version = "0.1.0"
+description = "minimal trainer for Wan"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.4.0",
+    "torchvision>=0.19.0",
+    "opencv-python>=4.9.0.80",
+    "diffusers>=0.31.0",
+    "transformers>=4.49.0",
+    "tokenizers>=0.20.3",
+    "accelerate>=1.1.1",
+    "tqdm",
+    "imageio",
+    "easydict",
+    "ftfy",
+    "dashscope",
+    "imageio-ffmpeg",
+    "flash_attn",
+    "gradio>=5.0.0",
+    "numpy>=1.23.5,<2",
+    "click>=8.1.8",
+    "setuptools>=75.8.2",
+    "pyav>=14.2.1",
+    "decord>=0.6.0",
+    "wandb>=0.19.8",
+]
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
