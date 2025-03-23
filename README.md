@@ -1,23 +1,24 @@
 # Zero-to-Wan
 A minimalistic repo to finetune Wan2.1-1.3B
 
+
 <details>
   <summary><strong>Demo Videos</strong></summary>
 
   <div align="center">
-  <video src="https://github.com/user-attachments/assets/76b098bc-e636-4c22-82b9-ca7bc7cf059b">
+  <video src="https://github.com/user-attachments/assets/395b9f48-8335-41ff-ae79-6b25c6b1cf4c">
   </video> </div>
 
   <div align="center">
-  <video src="https://github.com/user-attachments/assets/a75ff9ec-43a7-48ff-a912-a832518c89f1">
+  <video src="https://github.com/user-attachments/assets/146b0951-860f-44c9-8f7f-5e4ec3a14c98">
   </video></div>
   
   <div align="center">
-  <video src="https://github.com/user-attachments/assets/927f63eb-58b2-4f97-be07-217ee701febd">
+  <video src="https://github.com/user-attachments/assets/edcb516b-de6f-48b9-95b3-c9bf4434b4c7">
   </video></div>
   
   <div align="center">
-  <video src="https://github.com/user-attachments/assets/ca936cb9-5849-4685-8116-230706ef45f9">
+  <video src="https://github.com/user-attachments/assets/8ba7d37e-1d13-4d29-a479-696be1504816">
   </video></div>
 
 </details>
