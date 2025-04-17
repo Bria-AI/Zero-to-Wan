@@ -379,7 +379,7 @@ def main():
 
                 start_time_for_log_steps = time.time()
 
-            if global_step % args.checkpoint_every == 0 and global_step > 0 and master_process:
+            if global_step % args.checkpoint_every == 0 and global_step > 0:
                 save_checkpoint(
                     transformer=transformer, optimizer=optimizer, global_step=global_step, args=args, rank=ddp_rank
                 )
