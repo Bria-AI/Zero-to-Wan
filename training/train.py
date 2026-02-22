@@ -109,7 +109,7 @@ def apply_fsdp_v1(transformer, sharding_strategy, param_dtype, reduce_dtype):
 def maybe_drop_prompt(prompt_drop_prob, encoder_hidden_states):
     batch_size = len(encoder_hidden_states)
     random_p = torch.rand(batch_size).to(encoder_hidden_states[0].device)
-    prompt_mask = random_p < prompt_drop_prob
+    prompt_mask = random_p > prompt_drop_prob
     prompt_mask = prompt_mask.reshape(batch_size, 1)
     encoder_hidden_states = [
         encoder_hidden_state * curr_mask for encoder_hidden_state, curr_mask in zip(encoder_hidden_states, prompt_mask)
